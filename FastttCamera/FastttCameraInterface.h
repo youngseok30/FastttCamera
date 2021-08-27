@@ -359,4 +359,12 @@
  */
 - (void)userDeniedCameraPermissionsForCameraController:(id<FastttCameraInterface>)cameraController;
 
+/**
+ *  Called when the camera controller has obtained the sample buffer
+ *
+ *  @param sampleBuffer    The plain, sample buffer from the camera.
+ *
+ */
+- (void)willOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer;
+
 @end

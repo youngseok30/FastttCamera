@@ -456,6 +456,7 @@
                 _stillCamera = [[GPUImageStillCamera alloc] initWithSessionPreset:AVCaptureSessionPresetPhoto cameraPosition:position];
                 _stillCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
                 _stillCamera.horizontallyMirrorFrontFacingCamera = YES;
+                _stillCamera.delegate = self.delegate;
                 
                 switch (position) {
                     case AVCaptureDevicePositionBack:
